@@ -387,7 +387,9 @@ export class HttpServer {
         httpOnly: true,
         expires: this.cookieExpires,
         path: this.identopts.cookiePath,
-        domain: this.cookieDomain
+        domain: this.cookieDomain,
+        secure: true,
+        sameSite: 'none'
       }
     )
   }
